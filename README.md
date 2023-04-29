@@ -35,7 +35,7 @@ git clone https://github.com/pythonmanGo/chatGPT-web-cn.git
 
 ps1：本程序采用的python版本为python3.79
 
-ps2：如果发现有图标文件缺失，请解压static/fontawesome-free-6.4.0-web.zip文件,覆盖原来的fstatic/ontawesome-free-6.4.0-web目录即可。
+ps2：如果发现有图标文件缺失，请解压根目录下的fontawesome-free-6.4.0-web.zip文件,覆盖原来static/ontawesome-free-6.4.0-web目录即可。
 
 2. 安装依赖
 
@@ -64,7 +64,11 @@ pip install -r requirements.txt
 String_list =sk-xxxxx                          #openai key  可以放入更多的key，这样速度更快一些，用户之间不冲突。
 YunHanshu=https://xxxxxx/                                                        #云函数地址
 MYSQLURI=mysql+pymysql://数据库用户名:数据库密码S@数据库地址:数据库端口/数据库名         #mysqlURI地址
-
+HOST=数据库地址
+USER=数据库用户名
+PORT=3306
+PASSWORD=数据库密码
+DBNAME=数据库名
 ```
 
 6. 启动项目
