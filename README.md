@@ -60,7 +60,7 @@ pip install -r requirements.txt
 5. 修改配置文件
 
 ```bash
-修改根目录下配置文件robot.env，以下三项必须修改：
+修改根目录下配置文件robot.env，以下几项必须修改：
 String_list =sk-xxxxx                          #openai key  可以放入更多的key，这样速度更快一些，用户之间不冲突。
 YunHanshu=https://xxxxxx/                                                        #云函数地址
 MYSQLURI=mysql+pymysql://数据库用户名:数据库密码S@数据库地址:数据库端口/数据库名         #mysqlURI地址
@@ -86,7 +86,7 @@ python chatGPTFull.py
 ## 注意事项
 
 该项目为仿真版chatGPT，仅供学习和研究使用，请勿在公共场合使用相关话题和内容。如有任何问题和建议，或者有进一步需求，欢迎联系开发者。有问题可以加入咨询群了解：
-
+服务器资源和token有限，如需拿体验环境，也请加微信群沟通。
 
 
 ![image-20230429163531838](https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429163531838.png)
