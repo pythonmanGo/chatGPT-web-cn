@@ -1,0 +1,479 @@
+
+      /* Styles for sidebar */
+      
+a {
+  color: white;
+  text-decoration: none; /* 去除下划线 */
+}
+
+a:hover {
+  color: grey;
+    text-decoration: none; /* 去除下划线 */
+  
+}
+
+body {
+  background-color: #f1f1f1; /* 白色底色 */
+}
+
+.btn-copy {
+  background-image: url('../copy40.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px; /* 背景图片的宽度 */
+  height: 24px; /* 背景图片的高度 */
+  display: block;
+
+
+}
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-link {
+  display: flex;
+  align-items: center;
+}
+
+.edit-topic,
+.delete-topic {
+  display: inline-block;
+  margin-left: 5px;
+}
+   .sidebar {
+	  	width:20%;
+        height: 100%;
+        background-color:  #555551;
+;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .sidebar li {
+        padding: 10px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      .sidebar li:hover {
+        background-color: #555555;
+      }
+
+      .sidebar li.active {
+        background-color: #555555;
+      }
+
+      .sidebar li.active .rename-topic input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        background-color: #f1f1f1;
+        color: #1d1d1d;
+      }
+
+      .sidebar li.active .rename-topic button {
+        margin-top: 5px;
+        padding: 5px 10px;
+        border: none;
+        background-color: #1d1d1d;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      .sidebar .new-topic {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      .sidebar .new-topic input {
+        flex-grow: 1;
+        padding: 5px;
+        border: none;
+        background-color: #555555;
+        color: #ffffff;
+        margin-right: 5px;
+      }
+
+      .sidebar .new-topic button {
+        padding: 5px 10px;
+        border: none;
+        background-color: #1d1d1d;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      
+    .sidebar .code {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 16px;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .sidebar .code.active,
+    .sidebar .code:hover {
+        background-color: #f7f7f7;
+    }
+
+    .sidebar .code.active:after,
+    .sidebar .code:hover:after {
+        border-left-color: #f7f7f7;
+    }
+
+    .sidebar .code.active .rename-code {
+        display: block;
+    }
+
+    .sidebar .code .code-name {
+        margin-left: 10px;
+    }
+
+    .sidebar .code .code-actions {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .sidebar .code .code-actions button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .sidebar .code .rename-code {
+        display: none;
+        margin-left: 10px;
+    }
+
+    .sidebar .code .rename-code input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        background-color: #f1f1f1;
+        color: #1d1d1d;
+    }
+
+    .sidebar .code .rename-code button {
+        margin-top: 5px;
+        padding: 5px 10px;
+        border: none;
+        background-color: #1d1d1d;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+.chat {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  width: 80%;
+  height: 85%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 0px;
+  border-radius: 10px;
+   overflow-y: scroll; /* 设置 Y 轴滚动条 */
+    z-index: 999;
+
+  
+}
+
+    .chat .user-message {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+          z-index: 1000;
+
+        
+    }
+    .chat .user-message .message {
+        background-color: #1d1d1d;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 78%;
+          z-index: 1001;
+        
+    }
+
+    .chat .user-message .avatar {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .chat .user-message .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+    .chat .bot-message {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .chat .bot-message .message {
+        background-color: #ffffff;
+        color: #1d1d1d;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 78%;
+    }
+.chat .bot-message .avatar {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .chat .bot-message .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .chat .user-message .time {
+        font-size: 12px;
+        margin-top: 5px;
+        color: #999999;
+    }
+
+
+
+
+
+.message-send {
+  display: flex;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  width: 80%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  background-color:  #f1f1f1;
+                padding-left: 20px; /* 添加左边距 */
+  padding-right: 20px; /* 添加右边距 */
+}
+
+
+
+.message-form {
+  width: 80%;
+    position: fixed;
+  
+  box-sizing: border-box;
+
+}
+
+.message-input {
+  width: 65%;
+    height: 12%;
+  
+  box-sizing: border-box;
+  padding: 2px; /* �������Ҫ��������ʽ�����ֵ */
+  border: 1px solid #ccc; /* �������Ҫ��������ʽ�����ֵ */
+  position: fixed;
+  top: auto;
+  bottom: 1%;
+  left: 23%;
+  right: 0;
+}
+
+
+.message-button {
+  box-sizing: border-box;
+  padding: 2px; /* �������Ҫ��������ʽ�����ֵ */
+  border: 1px solid #ccc; /* �������Ҫ��������ʽ�����ֵ */
+  position: fixed;
+  top: auto;
+  bottom: 6%;
+  left: auto;
+  right: 4%;
+  width:4%;
+  height:5%;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 38%;  }
+  
+    .chat {
+      border-radius: 0px;
+                      padding-left: 1px; /* 添加左边距 */
+  padding-right: 5px; /* 添加右边距 */
+    width: 62%;
+  }
+  .message-send {
+
+  width: 62%;}
+  .message-input {
+    width: 50%;
+      top: auto;
+  bottom: 1%;
+  left: 38%;
+  right: 0;
+
+  
+    
+    }
+    
+    .message-button {   
+    
+      left: auto;
+  right: 4%;
+  width:30px;
+  height:30px;
+     }
+  
+}
+
+.awesome-arrow {
+
+  width: 40px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 9999;
+  cursor: pointer;
+    position: absolute;
+  top: 10%;
+  right: 0%;
+  transform: translate(-100%, -100%)
+}
+
+.awesome-arrow:hover {
+  background: #fff;
+  color: #000;
+}
+
+.sidebar-closed {
+  width: 0;
+}
+.sidebar-opened {
+  width: 20%;
+}
+
+.chat-maximized {
+  left: 10px;
+      width: 100%;
+  
+  padding-left: 5px; /* 将左边距改为侧边栏的宽度 */
+    padding-right: 5px; /* 右边距设置为 0 */
+  
+}
+  .message-send-maximized {
+    left: 10px;  
+    width: 100%;
+  padding-left: 5px; /* 将左边距改为侧边栏的宽度 */
+  padding-right: 5px; /* 右边距设置为 0 */
+      
+    
+}
+@media only screen and (min-width: 768px){
+
+.message-input-maximized {
+  width: 70%;
+    height: 12%;
+  
+  box-sizing: border-box;
+  padding: 2px; /* �������Ҫ��������ʽ�����ֵ */
+  border: 1px solid #ccc; /* �������Ҫ��������ʽ�����ֵ */
+  position: fixed;
+  top: auto;
+  bottom: 1%;
+  left: 5%;
+  right: 0;
+}}
+@media only screen and (max-width: 767px){
+.message-input-maximized {
+  width: 60%;
+    height: 12%;
+  
+  box-sizing: border-box;
+  padding: 2px; /* �������Ҫ��������ʽ�����ֵ */
+  border: 1px solid #ccc; /* �������Ҫ��������ʽ�����ֵ */
+  position: fixed;
+  top: auto;
+  bottom: 1%;
+  left: 22%;
+  right: 0;
+}
+}
+
+.awesome-arrow {
+  position: fixed;
+  left: 10px;
+   top: 50%;
+  
+  margin-top: -22px;
+  z-index: 9999;
+  cursor: pointer;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* 半透明灰色背景，用于测试位置 */
+}
+
+
+
+.awesome-arrow-expanded {
+  /* 侧边栏展开时的箭头样式 */
+  display: block; /* 确保箭头可见 */
+  color: #ffffff;
+    position: fixed;
+      left: 5px;
+    
+  top: 50%;
+  margin-top: -22px;
+  z-index: 999999;
+  cursor: pointer;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* 半透明灰色背景，用于测试位置 */
+}
+
+.awesome-arrow-collapsed {
+  /* 侧边栏收起时的箭头样式 */
+  position: fixed; /* 固定位置 */
+    color: #ffffff;
+  
+  top: 50%;
+  left: 5px;
+  
+  margin-top: -22px;
+  z-index: 9999;
+  cursor: pointer;
+  transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3); /* 半透明灰色背景，用于测试位置 */
+  
+}
