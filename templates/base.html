@@ -1,0 +1,37 @@
+{% extends "bootstrap/base.html" %} <!-- base.html模板继承自bootstrap/base.html -->
+{% block title %}chatGPT全仿真系统{% endblock %}
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-taget=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<sapn class="icon-bar"></sapn>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">chatGPT全仿真系统 </a>
+
+</div>
+<div style="color:rgb(192,192,192);text-align:left;"><br>支持话题导航分类，连续对话，用户注册，可以一站式部署使用。</div>
+<div class="navbar=collapse collapse">
+
+<ul class="nav navbar-nav">
+<li>
+<a href="/">Home</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+{% block page_content %}{% endblock %}
+</div>
+{% endblock %}
+
+<!--title、navbar、content都是bootstrap/base.html中定义的块。navbar是显示导航栏，其中的代码比较多，作用是添加Flasky和Home两个链接-->
+<!--以后的html页面直接继承base.html就可以了-->

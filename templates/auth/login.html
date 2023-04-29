@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet"
+	href="../static/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/style.css" media="screen"
+	type="text/css" />
+
+<!-- 引入bootstrap.css 基于flask需要使用全路径-->
+</head>
+<body>
+<div class="container"><!-- 使用bootstrap的container容器 -->
+
+
+
+
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}chatFPT全仿真系统V1.0 - Login{% endblock %}
+{% block page_content %}
+<div   class="text-center"><!-- 使用bootstrap的 row -->
+<div class="col-md-10 text-center" ><!-- 使用bootstrap布局 col-md-2 占2份 ，总共12份 -->
+
+<div class="page-header">
+    <h1>         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp用户登录</h1>
+</div>
+<div>
+<div class="col-md-5 text-center"></div>
+<div class="col-md-3 text-center">
+    {{ wtf.quick_form(form) }}
+    <br>
+    <p>新用户
+        <a href="{{ url_for('register') }}">单击此处完成注册</a>
+    </p>
+</div>
+<div class="col-md-3 text-center"></div>
+
+{% endblock %}
+
+</div>
+</div>
+</div>
+</body>
+</html>

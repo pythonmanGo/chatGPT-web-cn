@@ -1,0 +1,6 @@
+<p>敬爱的{{ user.username }}用户,</p>
+<p>欢迎访问 <b>chantGPT全仿真网站</b>!</p>
+<p>请确认你的账户 <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击此处确认 here</a>.</p>
+<p>或者，您可以在浏览器的地址栏中粘贴以下链接：</p>
+<p>{{ url_for('app.confirm', token=token, _external=True) }}</p>
+<p><small>注意：不监视对此电子邮件地址的回复！</small></p>

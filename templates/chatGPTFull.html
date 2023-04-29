@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>ChatGPT</title>
+	<link rel="stylesheet"
+	href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<!-- 引入 Font Awesome 的 CSS 文件 -->
+<link rel="stylesheet" href="../static/fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="preload" href="../static/css/chatgptfullnew.css" as="style">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/chatgptfullnew.css">
+
+<!-- 引入 Font Awesome 的 JS 文件 -->
+<script src="../static/fontawesome-free-6.4.0-web/js/all.min.js"></script></head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12" style="background-color: #f5f5f5;"><div class="sidebar">
+            <h4>咨询话题</h4>
+                <li class="new-topic">
+                <input type="hidden" id="current-topic"  class="current-topic"  value="{{topicname}}">
+                    <span class="add-topic"><i class="fas fa-plus"  onclick="addTopic(this.parentNode)"></i></span>
+                    <input type="text" class="new1-topic"  placeholder="New Topic">
+                </li>
+                            <a href="#" class="awesome-arrow"><i class="fas fa-angle-double-left"></i></a>
+                
+            <ul class="topics-list">
+            
+                {% for topic in topics %}
+                <li {% if topic == topicname %}class="active"{% endif %}>
+                                   <a href="chatGPTFull?topicname={{ topic.topicname }}" class="topic-link" ><span class="topicname-topic"><i class="fal fa-comments-alt" ></i></span>
+                
+                    <span class="topic-name">&nbsp;<i class="fas fa-envelope"></i>&nbsp;&nbsp;<span class="editable-field"   >{{ topic.topicname }}</span>  <input type="hidden" id="old-topic"  class="old-topic"  value="{{ topic.topicname }}">
+                   </span></a>
+                    <span class="edit-topic" onclick="modifyTopic(this.parentNode)"><i class="fas fa-pencil-alt"></i></span>
+                    
+                    <span class="delete-topic" onclick="delTopic('{{ topic.topicname }}')"><i class="fas fa-trash" ></i></span>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div></div>
+
+
+
+
+	<div class="chat">
+            <h2>{{ topicname }}</h2>
+            <div class="chat-box">
+                {% for message in messages %}
+                {% if message.chatuser != 'assistant' %}
+             <div class="user-message">
+                    <div class="avatar"><i class="fas fa-user"></i></div>                
+                    <div class="message">{{ message['gptouttext'] }}
+           </div>
+           
+                </div>
+                {% else %}
+         
+                
+                          <div class="bot-message">
+                    <div class="avatar"><i class="fas fa-robot"></i></div>
+                    <div class="message"><pre><code>{{ message.gptouttext }}</code></pre>  </div><button class="btn btn-copy" onclick="copyToClipboard(this.parentNode)"></button>
+                </div>
+                
+                
+                
+                {% endif %}
+                
+                
+                
+                
+                {% endfor %}
+            </div>
+			<div class="message-send">
+
+
+			<textarea   name="message-input" class="message-input"  id="message-input" required=""  placeholder="在此输入需要向ChatGPT提问的内容。"  rows="5"></textarea> 
+
+                <button type="button" class="message-button"><i class="fas fa-paper-plane"></i></button>
+
+			
+				</div>
+        </div>
+        </div>
+
+
+
+
+  </div>
+
+
+
+    <script src="../static/js/jquery.min.js"></script>
+
+
+	<script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../static/js/chatgptfull.js"></script>
+
+</body>
+
+</html>
