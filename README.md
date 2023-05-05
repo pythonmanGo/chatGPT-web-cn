@@ -63,7 +63,7 @@ pip install -r requirements.txt
 修改根目录下配置文件robot.env，以下几项必须修改：
 String_list =sk-xxxxx                          #openai key  可以放入更多的key，这样速度更快一些，用户之间不冲突。
 YunHanshu=https://xxxxxx/                                                        #云函数地址
-MYSQLURI=mysql+pymysql://数据库用户名:数据库密码S@数据库地址:数据库端口/数据库名         #mysqlURI地址
+MYSQLURI=mysql+pymysql://数据库用户名:数据库密码@数据库地址:数据库端口/数据库名         #mysqlURI地址
 HOST=数据库地址
 USER=数据库用户名
 PORT=3306
