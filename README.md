@@ -1,5 +1,5 @@
 # chatGPT-web-cn
-中国国内可以使用的chatGPT web版支持开发者部署服务给自己的用户使用。
+中文版chatGPT，中国国内可以使用的chatGPT web版支持开发者部署服务给自己的用户使用。
 采用python+flask+mysql开发。
 
 
@@ -97,5 +97,8 @@ python chatGPTFull.py
 1. 代码的简化&界面优化。（欢迎开发者加入，提供指导。）
 2. 多模型支持。
 3. 图片模型接入。
+
 4.个性化话题定制。
+
 5.自动识别话题并进行prompt联想，进一步提升易用性。
+
