@@ -52,7 +52,7 @@ pip install -r requirements.txt
 4. 配置openai云函数
 
 
-申请OPENAI的APIkey。
+    申请OPENAI的APIkey。
 请参考 https://github.com/Ice-Hazymoon/openai-scf-proxy
       进行openai云函数配置 
 
