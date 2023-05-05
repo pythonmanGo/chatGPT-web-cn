@@ -46,7 +46,8 @@ pip install -r requirements.txt
 3. 导入数据库
 
 ```bash
-数据库在根目录下的database目录下的txt文件database.txt，导入mysql数据库中。
+1）安装mysql数据库
+2）数据库在根目录下的database目录下的txt文件database.txt，导入mysql数据库中。
 ```
 
 4. 配置openai云函数
@@ -97,4 +98,4 @@ python chatGPTFull.py
 2. 多模型支持。
 3. 图片模型接入。
 4.个性化话题定制。
-5.自动识别话题并进行prompt联想。
+5.自动识别话题并进行prompt联想，进一步提升易用性。
