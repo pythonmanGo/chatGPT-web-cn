@@ -13,7 +13,7 @@ chatGPT国内web版可用简单部署在服务器上就可以开放给用户使�
 
 
 
-![image-20230429162313381](https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png)
+![image](https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png){width="50%" height="50%"}
 
 ## 功能
 
