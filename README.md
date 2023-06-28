@@ -90,7 +90,8 @@ python chatGPTFull.py
 服务器资源和token有限，如需拿体验环境，也请加微信群沟通。
 
 
-![](https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/202306280815606.jpg)
+
+<img src="[https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png" alt="" style="zoom:50%;" />
 ## TODO List
 
 1. 代码的简化&界面优化。（欢迎开发者加入，提供指导。）
