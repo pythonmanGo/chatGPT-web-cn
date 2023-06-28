@@ -13,7 +13,7 @@ chatGPT国内web版可用简单部署在服务器上就可以开放给用户使�
 
 
 
-![image](https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png){width="50%" height="50%"}
+![image](https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png)
 
 ## 功能
 
@@ -91,7 +91,8 @@ python chatGPTFull.py
 
 
 
-<img src="[https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png" alt="" style="zoom:50%;" />
+<img src="https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png" alt="" style="zoom:50%;" />
+
 ## TODO List
 
 1. 代码的简化&界面优化。（欢迎开发者加入，提供指导。）
