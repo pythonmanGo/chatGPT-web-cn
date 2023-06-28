@@ -91,7 +91,7 @@ python chatGPTFull.py
 
 
 
-<img src="https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/image-20230429162313381.png" alt="" style="zoom:50%;" />
+<img src="https://picgo-1305429599.cos.ap-guangzhou.myqcloud.com/picgo/202306280815606.jpg" alt="" style="zoom:50%;" />
 
 ## TODO List
 
